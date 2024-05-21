@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Party Time</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600");
+      min-height: 100%
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Party Time</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OUR TEAM</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> OUR SERVICES</a>
+        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PACKAGES</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">OUR SERVICES</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PACKAGES</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Welcome to Party Time</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to Party Time</span><br>
+      <span class="w3-large">Make Your Events More Enjoyable With Us!</span>
+      <p><a href="#pricing"
+          class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Our
+          Packages</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <a href="https://it-works.nv22096.repl.co/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://it-works.nv22096.repl.co/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://it-works.nv22096.repl.co/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      <a href="https://it-works.nv22096.repl.co/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+      <a href="https://it-works.nv22096.repl.co/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://it-works.nv22096.repl.co/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">ABOUT PARTY TIME</h3>
+    <p class="w3-center w3-large">Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Event Elegance</p>
+        <p>Experts in creating unforgettable experiences. From birthdays to weddings, we handle every detail. Let us
+          make your event extraordinary!</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Passion</p>
+        <p>Passionate about creating unforgettable experiences. Let us infuse your event with energy and excitement!</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Design</p>
+        <p>Unleashing creativity through captivating designs. Transforming spaces into magical settings. Elevate your
+          event with our design expertise.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>Dedicated support for your event needs. We're here to assist you every step of the way. Contact us for
+          personalized assistance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section - "We know design" -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>We know party design</h3>
+        <p> Combining creativity and expertise to deliver visually stunning and unforgettable event experiences.</p>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Services</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large"
+          src="https://plus.unsplash.com/premium_photo-1677490069967-89c7150d6e74?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFydHl8ZW58MHx8MHx8fDA%3D"
+          alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+    <p class="w3-center w3-large">The ones who runs this company</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img
+            src="https://images.unsplash.com/photo-1519456264917-42d0aa2e0625?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Abdulrahman</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+
+            <p><button class="w3-button w3-light-grey w3-block"
+                onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'"><i
+                  class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img
+            src="https://media.istockphoto.com/id/1430206686/photo/indoor-portrait-of-riyadh-executive-holding-digital-tablet.webp?b=1&s=170667a&w=0&k=20&c=aHKjyGrCdVgkP81wc38wKIm5crQwaEuPymYaGhFcGlc="
+            alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Saud</h3>
+            <p class="w3-opacity">Art Director</p>
+
+            <p><button class="w3-button w3-light-grey w3-block"
+                onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'"><i
+                  class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img
+            src="https://media.istockphoto.com/id/1441327418/photo/handsome-businessman-standing-at-office-portrait-of-smiling-man-employee-in-office.webp?b=1&s=170667a&w=0&k=20&c=kAOLpfTg8Ap-2V94ooHI0wmNbHR9P4PPOu4AAs_ePO0="
+            alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Hussain Alqassab</h3>
+            <p class="w3-opacity"> Design Reviewer</p>
+
+            <p><button class="w3-button w3-light-grey w3-block"
+                onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'"><i
+                  class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img
+            src="https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.webp?b=1&s=170667a&w=0&k=20&c=1VLP56VSuFBdjE-ioEuLEbOO-UIUGBnISnOjjymsB8s="
+            alt="Dan" style="width:100%">
+          <div class="w3-container">
+            <h3>Hussain Abdullah</h3>
+            <p class="w3-opacity">Designer</p>
+
+            <p><button class="w3-button w3-light-grey w3-block"
+                onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'"><i
+                  class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">14+</span>
+      <br>Partners
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">55+</span>
+      <br>Projects Done
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">89+</span>
+      <br>Happy Clients
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">150+</span>
+      <br>Meetings
+    </div>
+  </div>
+
+  <!-- Work Section -->
+  <div class="w3-container" style="padding:128px 16px" id="work">
+    <h3 class="w3-center">OUR Products & Services</h3>
+    <p class="w3-center w3-large">Products& SERVICES WE PROVIDE</p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l3 m6">
+        <a href="https://c1028dcc-7a76-4157-aace-1a8b0e9e85c0-00-3g1vih6x1rq4w.riker.replit.dev/"> <img src="https://i.ibb.co/8KD7PQ3/THEMED-EVENTS.jpg"
+            style="width:100%" class="w3-hover-opacity" alt="Themed Events"></a>
+      </div>
+      <div class="w3-col l3 m6">
+        <a href="https://527a616c-2031-40f5-bc3f-ad1ffcdf5848-00-78ap75zswkv0.worf.replit.dev/"> <img src="https://i.ibb.co/NTZMCh2/MARQUEE-PARTIES.jpg"
+            style="width:100%" class="w3-hover-opacity" alt="MARQUEE-PARTIES"></a>
+      </div>
+      <div class="w3-col l3 m6">
+        <a href="https://c01fcbb4-6747-47d2-9e29-a264512ba268-00-1og4kxbipxoit.janeway.replit.dev/"><img src="https://i.ibb.co/c6Yrr3x/SPECIAL-CELEBRATIONS.jpg"
+            style="width:100%" class="w3-hover-opacity" alt="SPECIAL-CELEBRATIONS"></a>
+      </div>
+      <div class="w3-col l3 m6">
+        <a href="https://f7058463-f851-4c06-8137-9264a9cc515e-00-3huh8raq8s6c9.kirk.replit.dev/"> <img src="https://i.ibb.co/GHRcfFg/ENTERTAINMENT.jpg"
+            style="width:100%" class="w3-hover-opacity" alt="ENTERTAINMENT"></a>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col l3 m6">
+        <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"> <img src="https://i.ibb.co/GnYFKz4/OTHER-SERVICES.jpg"
+            style="width:100%" class="w3-hover-opacity"
+            alt="OTHER SERVICES = fundraisers,bespoke catering,themes and props,invitations and printworks,sound and lighting"></a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Our Skills.</h3>
+        <p>Themed Event Expertise: From enchanting fairy tales to thrilling adventures, we excel in creating immersive
+          themed experiences that transport guests to another world.</p>
+        <p>Entertainment Excellence: We offer a wide range of entertainment options, from DJs and live bands to
+          mesmerizing magicians, ensuring that every moment is filled with excitement and joy.</p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large"
+          src="https://images.unsplash.com/photo-1464047736614-af63643285bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHklMjBvcmdhbml6ZXxlbnwwfDB8MHx8fDA%3D"
+          alt="lights and flags" width="700" height="200">
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3>PACKAGES</h3>
+    <p class="w3-large">Choose a Package that fits your needs.</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">BRONZE</li>
+          <li class="w3-padding-16"><b>ROOM DECORATIONS</b> balloons,banners</li>
+          <li class="w3-padding-16"><b>TABLE DECORATIONS</b> centrepieces,gifts</li>
+          <li class="w3-padding-16"><b>DJ ENTERTAINMENT</b></li>
+          <li class="w3-padding-16"><b>COLD BUFFET</b></li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">BHD 25</h2>
+            <span class="w3-opacity">per event</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large"
+              onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'">Choose
+              Package</button>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-red w3-xlarge w3-padding-48">SILVER - all from Bronze +</li>
+          <li class="w3-padding-16"><b>Invitation design and handling</b></li>
+          <li class="w3-padding-16"><b>Party cost clear up</b></li>
+          <li class="w3-padding-16"><b>Live band entertainment</b></li>
+          <li class="w3-padding-16"><b>Cold buffet and soft drinks</b></li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">BHD 40</h2>
+            <span class="w3-opacity">per event</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large"
+              onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'">Choose
+              Package</button>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">GOLD – all from Silver +</li>
+          <li class="w3-padding-69"><b>Staff in attendance to ensure complete perfection</b></li>
+          <li class="w3-padding-69"><b>Finding guest accommodation,booking transport</b> </li>
+          <li class="w3-padding-16"><b>Live band entertainment and magician</b></li>
+          <li class="w3-padding-16"><b>Hot and Cold buffet and soft drinks</b></li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">BHD 60</h2>
+            <span class="w3-opacity">per event</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large"
+              onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'">Choose
+              Package</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Custom Package</li>
+          <li class="w3-padding-16">Custom packages are available for specific parties</li>
+          <li class="w3-padding-16">Additional
+            decorations and additional staff</li>
+          <li class="w3-padding-16">
+            <h6 class="w3-wide"> Clients must contact the company to
+              arrange any custom packages</h6>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large"
+              onclick="window.location.href='https://party-time-website.nv22096.repl.co/#contact'">Contact the
+              Company</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Muharraq, Bahrain</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+973 999</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>partytime@gmail.com</p>
+      <br>
+      <label for="first name">First Name:<br></label>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="Name"></p>
+        <form>
+          <p>
+            <label for="email">Last Name:<br></label>
+            <input class="w3-input w3-border" id="email" type="text" placeholder="Last Name" required name="Last Name">
+          </p>
+          <p>
+            <label for="address">Address:<br></label>
+            <input class="w3-input w3-border" id="address" type="text" placeholder="Address" required name="Address">
+          </p>
+          <div class="form-group">
+            <label for="date">Date for booking:<br></label>
+            <input class="w3-input w3-border" type="date" id="date" name="date" required="">
+          </div>
+          <p> Services: <br>
+            <select class="w3-input w3-border" name="customer" id="customer" required>
+              <option value="">Select an option</option>
+              <option value="themed_events">Themed events</option>
+              <option value="marquee_parties">Marquee Parties</option>
+              <option value="special_celebrations">Special Celebrations</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="Other-fundraisers">Other - fundraisers</option>
+              <option value="Other-bespoke_catering">Other - bespoke catering</option>
+              <option value="Other-themes_and_props">Other - themes and props</option>
+              <option value="Other-invitations_and_printworks">Other - invitations and printworks</option>
+              <option value="Other-sound_and_lightning">Other - sound and lightning</option>
+            </select>
+          </p>
+          <p> Packages: <br>
+            <select class="w3-input w3-border" name="customer" id="customer" required="">
+              <option value="">Select an option</option>
+              <option value="none">None</option>
+              <option value="bronze">Bronze Package</option>
+              <option value="silver">Silver Package</option>
+              <option value="gold">Gold Package</option>
+              <option value="custom_package">Custom Package</option>
+            </select>
+          </p>
+          <p> Any suggestions or comments:</p>
+          <textarea id="comments" class="w3-input w3-border" name="comment" placeholder="Enter your suggestion or comment here..."></textarea>
+          
+        <br> <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+        </p>
+      </form>
+      <!-- Image of location/map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4205.446308710347!2d50.61289548102055!3d26.028755020306388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e4854135c18ea7f%3A0xaf0bf0bb7a3e7ae8!2sNasser%20Vocational%20Training%20Center%20(NVTC)!5e0!3m2!1sen!2sbh!4v1707733313998!5m2!1sen!2sbh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+      <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://c6aaed58-9016-44d0-b237-5bd4ad9fd9d7-00-2ky1v16s5fry6.picard.replit.dev/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p>Created by <a href="https://i.ibb.co/RSmm7kB/Snapchat-1022857401.jpg" title="Abdulrahman" target="_blank"
+        class="w3-hover-text-green">Abdulrahman NV22096</a></p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
